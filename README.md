@@ -1,8 +1,8 @@
 # 📄 Word2PDF — Local Document Converter
 
-A lightweight Flask web app that converts documents between **PDF ↔ Word (.docx/.doc)** entirely on your machine. No cloud, no uploads to third parties, no nonsense.
+ &emsp; A lightweight Flask web app that converts documents between **PDF ↔ Word (.docx/.doc)** entirely on your machine. No cloud, no uploads to third parties, no nonsense.
 
-&emsp; Built as a personal project.
+ &emsp; Built as a personal project.
 
 ---
 
