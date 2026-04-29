@@ -44,7 +44,7 @@ LibreOffice is required for Word → PDF conversion. It is **not** installable v
 sudo apt update && sudo apt install -y libreoffice
 
 # macOS
-brew install --cask libreoffice
+brew install libreoffice
 ```
 
 Verify it works:
