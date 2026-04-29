@@ -47,7 +47,7 @@ def convert_to_word(input_path,output_path):
 #converts to pdf using LibreOffice, found this approach online. LibreOffice runs without GUI,thats nice
 def convert_to_pdf(input_path,output_dir):
     result=subprocess.run(
-        ['libreoffice','--headless','--convert-to','pdf','--outdir',output_dir,input_path],
+        ['soffice','--headless','--convert-to','pdf','--outdir',output_dir,input_path],
                           capture_output=True,
                           text=True,
                           timeout=120
@@ -58,7 +58,7 @@ def convert_to_pdf(input_path,output_dir):
  #converts to docx from doc using LibreOffice as convert-to_pdf
 def convert_doc_to_docx(input_path,output_dir):
     result=subprocess.run(
-        ['libreoffice','--headless','--convert-to','docx','--outdir',output_dir,input_path],
+        ['soffice','--headless','--convert-to','docx','--outdir',output_dir,input_path],
                           capture_output=True,
                           text=True,
                           timeout=120
@@ -132,7 +132,7 @@ def convert_file(): # HTTP status code 400-Bad Request
         mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
         
     #docx->pdf    
-    elif file_ext in ['doc','docx']:
+    elif file_ext in ['doc','docx']:  
         #convert from doc->docx
         if file_ext =='doc':
             docx_filename=os.path.splitext(input_filename)[0]+'.docx'
