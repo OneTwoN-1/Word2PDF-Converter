@@ -5,7 +5,7 @@ A lightweight Flask web app that converts documents between **PDF ↔ Word (.doc
 Built as a personal project.
 ---
 
-## ✨ Features
+## 1.Features
 
 - **PDF → DOCX** conversion using `pdf2docx`
 - **DOCX / DOC → PDF** conversion using LibreOffice headless
@@ -17,7 +17,7 @@ Built as a personal project.
 
 ---
 
-## 🖥️ Tech Stack
+## 2.Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -29,11 +29,11 @@ Built as a personal project.
 
 ---
 
-## ⚙️ Requirements
+## 3.Requirements
 
 ### System dependency (must install manually)
 
-In the requirements.txt file will be all the dependencies required by this project to work. Just hit pip freeze > requirements.txt
+In the requirements.txt file will be all the dependencies required by this project to work. Just hit `pip freeze > requirements.txt`
 Down below will be all the steps that you have to go through to get this up and running. I know it's a bit demanding, but once you go trough all of this, you will have a perfectly working local converter. 
 
 LibreOffice is required for Word → PDF conversion. It is **not** installable via pip.
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the App
+## 4. Running the App
  
 ```bash
 # Clone the repo
@@ -71,8 +71,9 @@ cd Word2PDF-Converter
 I highly recommend to use a virtual environment to keep dependencies isolated and avoid conflicts with your systems Python.
 
 ```bash
-#Install environment
+#Install virtual environment
 python -m venv venv
+
 #Activate environment-mac
 source venv/bin/activate
 #venv/Scripts/activate -for windows
@@ -88,7 +89,7 @@ Then open your browser at: **http://127.0.0.1:5001**
 
 ---
 
-## 📁 Project Structure
+## 5. Project Structure
 
 ```
 docshift/
@@ -108,7 +109,7 @@ NOTE: The files will be deleted only if you keep the app running. If you close i
 
 ---
 
-## 🔁 How It Works
+## 6. How It Works
 
 ```
 User drops file
@@ -133,7 +134,3 @@ POST /convert ──► Flask detects file extension
 ```
 
 ---
-
-## 📜 License
-
-MIT — do whatever you want with it.
